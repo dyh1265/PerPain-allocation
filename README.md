@@ -1,6 +1,14 @@
-# PerPain-allocation
-This is the R shiny app used to allocate patients based on their characteristics to three different treatments during the PerPain project.
+# Allocation Types
 
-The code will attempt to install all required packages on its first run.
+This project supports multiple patient-allocation strategies. Choose the type appropriate for your study design, sample size, and available patient features.
 
-The app uses a pretrained XGBoost model to make predictions about the treatment assignment as well as visually display the patient's profile.
+## 1. Clustering Allocation
+- Groups patients by similarity using clustering algorithm.
+
+## 2. Individual Allocation (GNN‑TARnet and others)
+- Personalized allocation using Graph Neural Networks (GNN) combined with TARnet-style treatment-effect estimation.
+- Produces individualized treatment recommendations by modeling patient relationships and heterogeneous treatment effects.
+- Use when patient-level covariates and graph structure are informative and individualized assignments are desired.
+- Data is not included.
+
+For implementation details and examples, consult the documentation pages for each method in the repo.
