@@ -42,7 +42,7 @@ PerPain-allocation/
 - Groups patients by similarity using clustering algorithms
 
 **Quick Start**:
-```r
+```bash
 # Navigate to Clustering Allocation directory
 cd "Clustering Allocation"
 
